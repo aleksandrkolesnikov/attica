@@ -1,6 +1,6 @@
 include(ECMMarkAsTest)
 
-find_package(Qt${QT_MAJOR_VERSION}Widgets ${REQUIRED_QT_VERSION} CONFIG REQUIRED)
+find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} CONFIG REQUIRED COMPONENTS Widgets)
 set_package_properties(Qt${QT_MAJOR_VERSION}Widgets PROPERTIES PURPOSE "Required for tests")
 
 add_executable(projecttest)
